@@ -2,9 +2,20 @@
 
 2D Collision based on [EZS](https://github.com/AlexWargon/EZS). But it can be easy ported on other frameworks.
 
-### Include:
-#### Shapes: 
+####  Include:
+[Shapes]: 
 Circle, Rect.
-#### Casts:
+[Casts]:
 CircleOverlap
 #### Collision Query
+
+```c#
+
+
+NativeQueue<HitInfo> hits = Grid2D.Instance.Hits;
+
+while (hits.Count > 0) {
+    var hit = hits.Dequeue();
+}
+
+```
